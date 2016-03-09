@@ -1,0 +1,310 @@
+//公共变量
+
+//颜色
+$color-08a7ec : #08a7ec !default;
+$color-white : white !default;
+$color-e8e8e8 : #e8e8e8 !default;
+$color-e0e0e0 : #e0e0e0 !default;
+$color-e6e8ed : #e6e8ed !default;
+$color-0990ca : #0990ca !default;
+$color-333 : #333 !default;
+
+//大小尺寸
+$size12 : 12px !default;
+$size14 : 14px !default;
+$size16 : 16px !default;
+
+
+//圆角弧度
+$radius3:3px !default;
+
+//按钮
+$button-border-color:#049fe1;
+$button-hover-color:#098fc9;
+.btn-knet {
+    border-radius: $radius3;
+    &:focus {
+        outline: none;
+        color:$color-white;
+    }
+}
+.btn-primary-knet {
+    color:$color-white;
+    background-color: $color-08a7ec;
+    border-color: $button-border-color;
+    &:hover {
+        background-color: $button-hover-color;
+        color:$color-white;
+    }
+}
+
+//表格样式
+.table-knet {
+    border:1px solid $color-e0e0e0;
+    border-radius: $radius3;
+    > thead {
+        > tr {
+            background-color:$color-e8e8e8;
+        }
+    }
+    
+}
+.table-knet-hover {
+    & > tbody {
+        > tr:hover {
+            background-color:$color-e6e8ed;
+        }
+    }
+}
+
+//标签label
+.label-knet {
+    color:$color-0990ca;
+    cursor:pointer;
+    font-size:$size12;
+    display:inline-block;
+    padding:0.2em 0.6em;
+    border-radius:$radius3;
+    &:hover {
+        background-color:$color-0990ca;
+        color:$color-white;
+    }
+}
+.label-more {
+    display:inline-block;
+    padding:0.3em 0.8em;
+    border:1px solid transparent;
+    border-radius:$radius3;
+    font-size:$size12;
+    position:relative;
+    cursor:pointer;
+    &:hover {
+        border:1px solid $color-e0e0e0;
+        .label-more-content {
+            display:block;
+        }
+    }
+}
+.label-more-content {
+    width:103%;
+    display:none;
+    padding-top:2px;
+    position:absolute;
+    left:-1px;
+    background:$color-white;
+    border-left:1px solid $color-e0e0e0;
+    border-right:1px solid $color-e0e0e0;
+}
+.label-more-detail {
+    display:block;
+    padding:3px 1px;
+    text-align:center;
+    cursor:pointer;
+    border-bottom:1px solid $color-e0e0e0;
+    &:hover {
+        color:$color-0990ca;
+    }
+    &:first-child {
+        border-top:1px solid $color-e0e0e0;
+    }
+    &:last-child {
+        border-bottom-left-radius:$radius3;
+        border-bottom-right-radius:$radius3;
+    }
+}
+//改变bootstrap中的固有样式
+.table {
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+//分页，加此类的目的只是为了改变bootstrap的固有样式
+$pager-current-border:#049fe1 !default;
+$pager-disable-color:#ccc !default;
+.pager-knet {
+    border-radius:$radius3;
+    > li {
+        > a,
+        > span {
+            color:$color-333;
+        }
+        &:first-child {
+            > a,
+            > span {
+                border-top-left-radius: $radius3;
+                border-bottom-left-radius: $radius3;
+            }
+        }
+    }
+}
+.pager-knet-current {
+    background-color:$color-08a7ec !important;
+    border:1px solid $pager-current-border !important;
+    color:$color-white !important;
+}
+.pager-knet-disable {
+    color:$pager-disable-color !important;
+}
+
+//表单
+$input-error-color:#fb6362;
+input[placeholder] {font-size:$size12;}
+.form-control-knet {
+    border-color:$color-e0e0e0;
+    border-radius:$radius3;
+    &:focus {
+        border:1px solid $color-08a7ec;
+        box-shadow: none;
+    }
+}
+.form-control-knet-error {
+    border-color:$color-e0e0e0;
+    border-radius:$radius3;
+    border:1px solid $input-error-color;
+    &:focus {
+        border:1px solid $input-error-color;
+        box-shadow: none;
+    }
+}
+
+//导航
+.nav-knet-underline {
+    display:inline-block;
+    background-color:$color-white;
+    overflow: hidden;
+    padding-left:0;
+    > li {
+        list-style: none;
+        float:left;
+        border-bottom:2px solid $color-e0e0e0;
+        &:hover {
+            border-bottom-color:$color-08a7ec;
+            > a {
+                color:$color-08a7ec;
+            }
+        }
+        > a {
+            color:$color-333;
+            display: inline-block;
+            padding:0.5em 1.8em;
+            font-size:$size16;
+            &:hover,
+            &:active,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.nav-knet-bordered {
+    display: inline-block;
+    background-color:$color-white;
+    border:1px solid $color-e0e0e0;
+    border-radius: $radius3;
+    overflow: hidden;
+    padding-left: 0;
+    > li {
+        list-style: none;
+        float:left;
+        border-right: 1px solid $color-e0e0e0;
+        &:hover {
+            background-color:$color-08a7ec;
+            > a {
+                color:$color-white;
+            }
+        }
+        > a {
+            display: inline-block;
+            padding:0.5em 1.8em;
+            font-size:$size16;
+            color:$color-333;
+            &:hover,
+            &:active,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+        &:last-child {
+            border-right:none;
+        }
+    }
+}
+
+//弹窗
+.modal-mask {
+    background-color:rgba(0,0,0,.5);
+}
+.modal-dialog-knet {
+    position: fixed;
+    left:50%;
+    top:50%;
+    background-color:$color-white;
+    border-radius: $radius3;
+    overflow: hidden;
+    > .modal-dialog-heading {
+        font-size:$size16;
+        color:$color-333;
+        padding:12px;
+        background-color:$color-e8e8e8;
+        border-top-left-radius: $radius3;
+        border-top-right-radius: $radius3;
+    }
+    > .modal-dialog-body {
+        padding:30px 50px;
+    }
+    > .modal-dialog-foot {
+        position: absolute;
+        bottom: 15px;
+        right: 50px;
+    }
+}
+//配合bs的.close使用
+.close-knet {
+    color: $color-333;
+    &:hover {
+        color:$color-08a7ec;
+        opacity: 1;
+    }
+}
+.modal-dialog-huge {
+    width:800px;
+    height:470px;
+    margin-left:-400px;
+    margin-top:-235px;
+}
+.modal-dialog-lg {
+    width:640px;
+    height:370px;
+    margin-left:-320px;
+    margin-top:-185px;
+}
+.modal-dialog-md {
+    width:480px;
+    height:280px;
+    margin-left:-240px;
+    margin-top:-140px;
+}
+
+
+//定位
+.relative {position:relative;}
+.absolute {position:absolute;}
+.fixed {position:fixed;}
+
+
+
+
+
+
+
+
+
+
