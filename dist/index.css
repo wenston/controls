@@ -1,3 +1,24 @@
+body {
+  font-family: "Microsoft YaHei"; }
+
+.size30-knet {
+  font-size: 30px; }
+
+.size24-knet {
+  font-size: 24px; }
+
+.size18-knet {
+  font-size: 18px; }
+
+.size16-knet {
+  font-size: 16px; }
+
+.size14-knet {
+  font-size: 14px; }
+
+.size12-knet {
+  font-size: 12px; }
+
 .btn-knet {
   border-radius: 3px; }
   .btn-knet:focus {
@@ -425,3 +446,5 @@ input[placeholder] {
 
 .fixed {
   position: fixed; }
+
+/*# sourceMappingURL=index.css.map*/
