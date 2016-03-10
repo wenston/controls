@@ -58,8 +58,7 @@
 				return $('#mytext').html();
 			},
 			afterCopy: function() { //复制成功   
-				alert("");
-				/*$("<span id='msg'/>").insertAfter($('#copy_input')).text('复制成功');*/
+				$("<span id='msg'/>").insertAfter($('#copy_input')).text('复制成功');
 			}
 		});
 	});
