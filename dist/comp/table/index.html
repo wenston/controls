@@ -6,9 +6,65 @@
 		<title></title>
 		<link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" href="../../index.css" />
+		<link rel="stylesheet" href="../../style.css" />
+		<script src="../../index.js"></script>	
 	</head>
 
 	<body>
+		<!--标准字-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>字体</h2>
+					<p>统一微软雅黑</p>
+				</div>
+				<div class="col-lg-12">
+					<h2>字号</h2><span id="mytext">1234334</span>
+									<div class="zclip">copy</div>
+					<div class="we-example">
+						<table class="table">
+							<tbody>
+								<tr class="table-title">
+									<td>样式</td>
+									<td>字号</td>
+									<td>使用场景</td>
+								</tr>
+								<tr>
+									<td class="size30-knet">文字</td>
+									<td class="td02-word">30px</td>
+									<td class="td03-word">主要用于突出提醒的大标题</td>
+								</tr>
+								<tr>
+									<td class="size24-knet">文字</td>
+									<td class="td02-word">24px</td>
+									<td class="td03-word">主要用于数据统计中数字显示</td>
+								</tr>
+								<tr>
+									<td class="size18-knet">文字</td>
+									<td class="td02-word">18px</td>
+									<td class="td03-word">主要用于按钮上的文字</td>
+								</tr>
+								<tr>
+									<td class="size16-knet">文字</td>
+									<td class="td02-word">16px</td>
+									<td class="td03-word">主要用于菜单文字</td>
+								</tr>
+								<tr>
+									<td class="size14-knet">文字</td>
+									<td class="td02-word">14px</td>
+									<td class="td03-word">主要用于标题文字</td>
+								</tr>
+								<tr>
+									<td class="size12-knet">文字</td>
+									<td class="td02-word">12px</td>
+									<td class="td03-word">主要用于正文和备注</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--按钮-->
 		<div class="container">
 			<div class="row">
@@ -131,7 +187,7 @@
 							<label for="imgUpload" class="col-lg-1 control-label">图片上传</label>
 							<div class="col-lg-2">
 								<a href="javascript:;" class="imageUp-knet">
-									<input type="file" id="imgUpload"/>上传
+									<input type="file" id="imgUpload" />上传
 								</a>
 							</div>
 						</div>
@@ -139,11 +195,11 @@
 							<label class="col-lg-1 control-label">单选</label>
 							<div class="col-lg-2">
 								<a href="javascript:;" class="radio-knet">
-									<input type="radio"/>
+									<input type="radio" />
 									<span class="radioChecked"></span>
 								</a>
 								<a href="javascript:;" class="radioChecked-knet">
-									<input type="radio"/>
+									<input type="radio" />
 									<span class="radioChecked"></span>
 								</a>
 							</div>
@@ -152,11 +208,11 @@
 							<label class="col-lg-1 control-label">多选</label>
 							<div class="col-lg-2">
 								<a href="javascript:;" class="checkbox-knet">
-									<input type="checkbox"/>
+									<input type="checkbox" />
 									<span class="glyphicon glyphicon-ok cboxChecked"></span>
 								</a>
 								<a href="javascript:;" class="cboxChecked-knet">
-									<input type="checkbox"/>
+									<input type="checkbox" />
 									<span class="glyphicon glyphicon-ok cboxChecked"></span>
 								</a>
 							</div>
@@ -165,11 +221,11 @@
 							<label class="col-lg-1 control-label">下拉框</label>
 							<div class="col-lg-2">
 								<select class="form-control">
-								  <option>1</option>
-								  <option>2</option>
-								  <option>3</option>
-								  <option>4</option>
-								  <option>5</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
 								</select>
 							</div>
 						</div>
@@ -177,7 +233,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!--
         	导航
         -->
@@ -206,7 +262,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!--弹窗-->
 		<div class="modal modal-mask">
 			<div class="modal-dialog-knet modal-dialog-md">
@@ -214,45 +270,47 @@
 					<div class="close close-knet">×</div>
 				</div>
 				<div class="modal-dialog-body">
-					啊是广大撒旦法撒旦发斯蒂芬阿斯顿发送到发斯蒂芬
-					阿莎撒旦法阿斯顿发烧发斯蒂芬阿斯顿发烧发斯蒂芬
-					asd阿莎撒旦法士大夫，挂撒旦法撒旦f，
-					股阿斯顿发生大发阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬
+					啊是广大撒旦法撒旦发斯蒂芬阿斯顿发送到发斯蒂芬 阿莎撒旦法阿斯顿发烧发斯蒂芬阿斯顿发烧发斯蒂芬 asd阿莎撒旦法士大夫，挂撒旦法撒旦f， 股阿斯顿发生大发阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬
 				</div>
 				<div class="modal-dialog-foot">
 					<button class="btn btn-primary">确定</button>
 				</div>
 			</div>
 		</div>
-		
+
 		<!--进度条-->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">样式一<div>
-				<div class="col-lg-12">
-					<span class="progressNone"></span><span class="progressTip">70%</span>
-					<div class="progress-knet-tip">
-						<span></span>
+				<div class="col-lg-12">样式一
+					<div>
+						<div class="col-lg-12">
+							<span class="progressNone"></span><span class="progressTip">70%</span>
+							<div class="progress-knet-tip">
+								<span></span>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">样式二<div>
-				<div class="col-lg-12">
-					<div class="progress-knet-in">
-						<span>70%</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">样式三<div>
-				<div class="col-lg-12">
-					<div class="progress-knet-step">
-						<span class="step-circle step01 step-08a7ec">1</span><span class="step-strip step02 step-08a7ec"></span><span class="step-circle step02 step-08a7ec">2</span><span class="step-strip step03"></span><span class="step-circle step03">3</span><span class="step-strip step04"></span><span class="step-circle step04">4</span>											
-					</div>
-				</div>
-			</div>
-		</div>	
+					<div class="row">
+						<div class="col-lg-12">样式二
+							<div>
+								<div class="col-lg-12">
+									<div class="progress-knet-in">
+										<span>70%</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">样式三
+									<div>
+										<div class="col-lg-12">
+											<div class="progress-knet-step">
+												<span class="step-circle step01 step-08a7ec">1</span><span class="step-strip step02 step-08a7ec"></span><span class="step-circle step02 step-08a7ec">2</span><span class="step-strip step03"></span><span class="step-circle step03">3</span>
+												<span
+												class="step-strip step04"></span><span class="step-circle step04">4</span>
+											</div>
+										</div>
+									</div>
+								</div>
 	</body>
 
 </html>

@@ -1,0 +1,44 @@
+//公共变量
+
+//颜色
+$color-9a9b9a:#9a9b9a;
+$color-666766:#666766;
+$color-9b9c9b:#9b9c9b;
+$color-dddddd:#dddddd;
+
+//字号
+$size-18:18px;
+$size-16:16px;
+
+
+//样式
+.we-example{
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 -15px 15px;
+    border:1px solid $color-dddddd;
+    border-radius: 4px 4px 0 0;
+}
+.we-example::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "实例";
+}
+.table-title{
+    color:$color-9a9b9a;
+    font-size:$size-18;
+}
+.td02-word{
+   font-size:$size-16;
+   color:$color-666766;
+}
+.td03-word{
+   font-size:$size-16;
+   color:$color-9b9c9b;
+}

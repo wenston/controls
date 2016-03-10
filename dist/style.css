@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.we-example {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0; }
+
+.we-example::after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "\5B9E\4F8B"; }
+
+.table-title {
+  color: #9a9b9a;
+  font-size: 18px; }
+
+.td02-word {
+  font-size: 16px;
+  color: #666766; }
+
+.td03-word {
+  font-size: 16px;
+  color: #9b9c9b; }
+
+/*# sourceMappingURL=style.css.map*/

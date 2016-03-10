@@ -1,5 +1,16 @@
 //公共变量
 
+//字体
+$font-Yahei: "Microsoft YaHei";
+
+//字号
+$size-30:30px;
+$size-24:24px;
+$size-18:18px;
+$size-16:16px;
+$size-14:14px;
+$size-12:12px;
+
 //颜色
 $color-08a7ec : #08a7ec !default;
 $color-white : white !default;
@@ -21,6 +32,31 @@ $pointer:pointer !default;
 
 //圆角弧度
 $radius3:3px !default;
+
+//整体
+body{
+    font-family: $font-Yahei;
+}
+
+//字号
+.size30-knet{
+    font-size:$size-30;
+}
+.size24-knet{
+    font-size:$size-24;
+}
+.size18-knet{
+    font-size:$size-18;
+}
+.size16-knet{
+    font-size:$size-16;
+}
+.size14-knet{
+    font-size:$size-14;
+}
+.size12-knet{
+    font-size:$size-12;
+}
 
 //按钮
 $button-border-color:#049fe1;
