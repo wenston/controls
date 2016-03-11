@@ -6,3 +6,6 @@ node_modules
 
 # map文件
 *.map
+
+# 忽略dist里的编译后的文件
+!dist/comp/
