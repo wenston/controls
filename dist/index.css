@@ -64,6 +64,28 @@ body {
     background-color: #f28c00;
     border-color: #e78602; }
 
+.btn-label-knet {
+  color: #333;
+  background-color: white;
+  border-color: #e0e0e0; }
+  .btn-label-knet:hover {
+    color: white;
+    background-color: #1fb5ac;
+    border-color: #14978f; }
+  .btn-label-knet:focus {
+    color: #333;
+    background-color: white;
+    border-color: #e0e0e0; }
+
+.btn-opt-knet {
+  color: #333;
+  background-color: white;
+  border-color: #14978f; }
+  .btn-opt-knet:focus {
+    color: #333;
+    background-color: white;
+    border-color: #14978f; }
+
 .btn-main {
   width: 320px;
   height: 40px;
@@ -78,6 +100,29 @@ body {
   width: 60px;
   height: 28px;
   font-size: 12px; }
+
+.btn-label {
+  height: 28px;
+  font-size: 12px; }
+
+.btn-label-opt {
+  height: 22px;
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .btn-label-opt > span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    background-color: #1fb5ac;
+    line-height: 14px;
+    margin-right: -9px;
+    margin-left: 5px;
+    cursor: auto; }
+    .btn-label-opt > span:hover {
+      color: #fff;
+      background-color: #14978f; }
 
 .ico-search {
   color: #08a7ec; }

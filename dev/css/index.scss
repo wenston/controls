@@ -3,7 +3,7 @@
 //字体
 $font-Yahei: "Microsoft YaHei";
 
-//字号
+//字号大小尺寸
 $size-30:30px;
 $size-24:24px;
 $size-18:18px;
@@ -25,11 +25,8 @@ $color-cccccc:#cccccc !default;
 $color-ff9402:#ff9402 !default;
 $color-e78602:#e78602 !default;
 $color-f28c00:#f28c00 !default;
-
-//大小尺寸
-$size12 : 12px !default;
-$size14 : 14px !default;
-$size16 : 16px !default;
+$color-1fb5ac:#1fb5ac !default;
+$color-14978f:#14978f !default;
 
 //鼠标形状
 $pointer:pointer !default;
@@ -117,22 +114,72 @@ $button-hover-color:#098fc9;
         border-color: $color-e78602; 
     } 
 }
+.btn-label-knet{
+    color:$color-333;
+    background-color: $color-white;
+    border-color: $color-e0e0e0;
+    &:hover {
+        color:$color-white;
+        background-color: $color-1fb5ac;
+        border-color: $color-14978f; 
+    } 
+    &:focus {
+        color:$color-333;
+        background-color: $color-white;
+        border-color: $color-e0e0e0;
+    }
+}
+.btn-opt-knet{
+    color:$color-333;
+    background-color: $color-white;
+    border-color: $color-14978f;
+    &:focus{
+        color:$color-333;
+        background-color: $color-white;
+        border-color: $color-14978f; 
+    }
+}    
 //主按钮
 .btn-main{
     width:320px;
     height:40px;
-    font-size:18px;
+    font-size:$size-18;
 }
 //一般按钮
 .btn-ordinary{
     width:90px;
     height:36px;
-    font-size:16px;
+    font-size:$size-16;
 }
 .btn-small{
     width:60px;
     height:28px;
     font-size:12px;
+}
+.btn-label{
+    height:28px;
+    font-size:12px; 
+}
+.btn-label-opt{
+    height: 22px;
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    > span{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        color: #fff;
+        background-color: #1fb5ac;
+        line-height: 14px;
+        margin-right: -9px;
+        margin-left: 5px;
+        cursor:auto;
+        &:hover{
+           color: #fff;
+           background-color: #14978f; 
+        }
+    }
 }
 //图标
 .ico-search {
@@ -161,7 +208,7 @@ $button-hover-color:#098fc9;
 .label-knet {
     color:$color-0990ca;
     cursor:pointer;
-    font-size:$size12;
+    font-size:$size-12;
     display:inline-block;
     padding:0.2em 0.6em;
     border-radius:$radius3;
@@ -175,7 +222,7 @@ $button-hover-color:#098fc9;
     padding:0.3em 0.8em;
     border:1px solid transparent;
     border-radius:$radius3;
-    font-size:$size12;
+    font-size:$size-12;
     position:relative;
     cursor:pointer;
     &:hover {
@@ -256,7 +303,7 @@ $pager-disable-color:#ccc !default;
 
 //表单
 $input-error-color:#fb6362;
-input[placeholder] {font-size:$size12;}
+input[placeholder] {font-size:$size-12;}
 .form-control-knet {
     border-color:$color-e0e0e0;
     border-radius:$radius3;
@@ -389,14 +436,14 @@ input[placeholder] {font-size:$size12;}
     > span {
         display: inline-block;
         opacity: 0;
-        font-size: 12px;
+        font-size: $size-12;
         color: $color-08a7ec;
     } 
 }
 .cboxChecked-knet{
     width: 15px;
     height: 15px;
-    line-height:12px;
+    line-height:$size-12;
     text-align:center;
     border: 1px solid $color-e0e0e0;
     display: inline-block;
@@ -412,7 +459,7 @@ input[placeholder] {font-size:$size12;}
     > span {
         display: inline-block;
         opacity: 1;
-        font-size: 12px;
+        font-size: $size-12;
         color: $color-e8e9e8;
     }
 }
@@ -437,7 +484,7 @@ input[placeholder] {font-size:$size12;}
             color:$color-333;
             display: inline-block;
             padding:0.5em 1.8em;
-            font-size:$size16;
+            font-size:$size-16;
             &:hover,
             &:active,
             &:visited {
@@ -466,7 +513,7 @@ input[placeholder] {font-size:$size12;}
         > a {
             display: inline-block;
             padding:0.5em 1.8em;
-            font-size:$size16;
+            font-size:$size-16;
             color:$color-333;
             &:hover,
             &:active,
@@ -492,9 +539,9 @@ input[placeholder] {font-size:$size12;}
     border-radius: $radius3;
     overflow: hidden;
     > .modal-dialog-heading {
-        font-size:$size16;
+        font-size:$size-16;
         color:$color-333;
-        padding:12px;
+        padding:$size-12;
         background-color:$color-e8e8e8;
         border-top-left-radius: $radius3;
         border-top-right-radius: $radius3;
@@ -510,8 +557,8 @@ input[placeholder] {font-size:$size12;}
 }
 //进度条
 .progress-knet-tip{
-    height:16px;
-    line-height:16px;
+    height:$size-16;
+    line-height:$size-16;
     background:$color-e8e8e8;
     > span{
         width:70%;
@@ -543,12 +590,12 @@ input[placeholder] {font-size:$size12;}
     color: $color-white;
     padding: 3px 6px 3px 6px;
     margin-left: -20px;
-    margin-top: -16px;
+    margin-top: -$size-16;
     position: absolute;
     &:after{
         content:"";
         position:absolute;
-        left: 12px;
+        left: $size-12;
         top: 25px;
         display:block;
         width:0;
@@ -563,7 +610,7 @@ input[placeholder] {font-size:$size12;}
     :before{
         content:"";
         position:absolute;
-        left: 12px;
+        left: $size-12;
         top: 25px;
         display:block;
         width:0;
