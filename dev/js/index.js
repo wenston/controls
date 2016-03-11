@@ -3,13 +3,16 @@ require('./jquery.zclip.js');
 var swf = require('./ZeroClipboard.swf');
 $(function() {
 	var clip = $('.zclip');
-	$('.zclip').zclip({
+	$('.zero-clipboard').zclip({
 		path:'../../'+swf,
 		copy: function() { //复制内容   
-			return $('#mytext').html();
+			return $('.language-html').text();
 		},
 		afterCopy: function() { //复制成功   
-			$("<span id='msg'/>").insertAfter($('#copy_input')).text('复制成功');
+			$('.zero-clipboard').find("span").css("color","#08a7ec").text("复制成功!");
+			setTimeout(function(){
+				$('.zero-clipboard').find("span").css("color","inherit").text("复制");
+			},1000);
 		}
 	});
 });

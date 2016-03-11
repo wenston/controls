@@ -1,17 +1,42 @@
 //公共变量
 
 //颜色
+$color-08a7ec:#08a7ec;
+$color-6d6e6d:#6d6e6d;
 $color-9a9b9a:#9a9b9a;
 $color-666766:#666766;
 $color-9b9c9b:#9b9c9b;
 $color-dddddd:#dddddd;
-
+$color-32323a:#32323a;
+$color-1fb5ac:#1fb5ac;
+$color-a48ad4:#a48ad4;
+$color-eecc00:#eecc00;
+$color-ff9402:#ff9402;
+$color-fb6362:#fb6362;
+$color-f0f0f0:#f0f0f0;
+$color-f4f6f9:#f4f6f9;
+$color-e8e8e8:#e8e8e8;
+$color-e0e0e0:#e0e0e0;
+$color-cccccc:#cccccc;
+$color-fff1ec:#fff1ec;
+$color-333333:#333333;
+$color-098fc9:#098fc9;
+$color-999999:#999999;
+$color-fb6362:#fb6362;
 //字号
 $size-18:18px;
 $size-16:16px;
 
 
 //样式
+
+//大标题
+.main-title{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5px;
+}
+
+//标准字
 .we-example{
     position: relative;
     padding: 45px 15px 15px;
@@ -55,7 +80,8 @@ $size-16:16px;
     border: 1px solid #e1e1e8;
     border-radius: 0 4px 0 4px;
 }
-.highlight{ padding: 9px 14px;
+.highlight{ 
+    padding: 9px 14px;
     margin-bottom: 14px;
     background-color: #f7f7f9;
     border: 1px solid #e1e1e8;
@@ -63,5 +89,85 @@ $size-16:16px;
         border-width: 1px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    margin: -15px -15px 15px;}
-       
+    margin: -15px -15px 15px;
+}
+
+//标准色
+.colors{
+    height:150px;    
+}  
+.color-intro{
+    color:$color-6d6e6d;
+} 
+.color-intro p{
+    margin:5px;
+} 
+//主色  
+.colors-08a7ec{
+    background-color:$color-08a7ec;
+}
+//背景色
+.colors-32323a{
+    background-color:$color-32323a;
+}
+//辅助色
+.colors-1fb5ac{
+    background-color:$color-1fb5ac;
+}
+.colors-a48ad4{
+    background-color:$color-a48ad4;
+}
+.colors-eecc00{
+    background-color:$color-eecc00;
+}
+.colors-ff9402{
+    background-color:$color-ff9402;
+}
+//强调提示色
+.colors-fb6362{
+    background-color:$color-fb6362;
+}
+//页面背景色
+.colors-f0f0f0{
+    background-color:$color-f0f0f0;
+}
+//容器背景色
+.colors-f4f6f9{
+    background-color:$color-f4f6f9;
+}
+//title背景色
+.colors-e8e8e8{
+    background-color:$color-e8e8e8;
+}
+//分割线容器边框色
+.colors-e0e0e0{
+    background-color:$color-e0e0e0;
+}
+//不可点链接
+.colors-cccccc{
+    background-color:$color-cccccc;
+}
+//强调容器背景色
+.colors-fff1ec{
+    background-color:$color-fff1ec;
+}
+//正文
+.colors-333333{
+    background-color:$color-333333;
+}
+//链接滑过
+.colors-08a7ec{
+    background-color:$color-08a7ec;
+}
+//链接
+.colors-098fc9{
+    background-color:$color-098fc9;
+}
+//文字
+.colors-999999{
+    background-color:$color-999999;
+}
+//强调
+.colors-fb6362{
+    background-color:$color-fb6362;
+}
