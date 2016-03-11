@@ -4,8 +4,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry:{
-		index:'./dev/js/index.js',
-		style:'./dev/js/style.js'
+		index:'./dev/js/index.js',//编译index.css，处理业务逻辑
+		style:'./dev/js/style.js',//编译style.css
+		vendor:['jquery']//vendor文件隔离打包
 	},
 	output:{
 		path:path.join(__dirname,'dist/'),
@@ -19,6 +20,7 @@ module.exports = {
 	},
 	plugins:[
 		new ExtractTextPlugin('[name].css'),
+		new webpack.optimize.CommonsChunkPlugin('vendor','vendor.bundle.js'),
 		new webpack.ProvidePlugin({
 			$:'jquery',
 			jQuery:'jquery',
