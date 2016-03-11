@@ -8,4 +8,7 @@ node_modules
 *.map
 
 # 忽略dist里的编译后的文件
-!dist/comp/
+/dist/
+!/dist/comp/
+
+# 忽略文件夹/xxx/,如何排除这个文件夹呢？
