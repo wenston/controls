@@ -33,6 +33,52 @@ body {
     background-color: #098fc9;
     color: white; }
 
+.btn-disabled-knet {
+  color: #cccccc;
+  background-color: #e8e8e8;
+  border-color: #e0e0e0; }
+  .btn-disabled-knet:hover {
+    color: #cccccc;
+    background-color: #e8e8e8;
+    border-color: #e0e0e0; }
+
+.btn-default-knet {
+  color: #333;
+  background-color: white;
+  border-color: #e0e0e0; }
+  .btn-default-knet:hover {
+    color: #333;
+    background-color: #e8e8e8;
+    border-color: #e0e0e0; }
+  .btn-default-knet:focus {
+    color: #333;
+    background-color: white;
+    border-color: #e0e0e0; }
+
+.btn-warning-knet {
+  color: white;
+  background-color: #ff9402;
+  border-color: #e78602; }
+  .btn-warning-knet:hover {
+    color: white;
+    background-color: #f28c00;
+    border-color: #e78602; }
+
+.btn-main {
+  width: 320px;
+  height: 40px;
+  font-size: 18px; }
+
+.btn-ordinary {
+  width: 90px;
+  height: 36px;
+  font-size: 16px; }
+
+.btn-small {
+  width: 60px;
+  height: 28px;
+  font-size: 12px; }
+
 .ico-search {
   color: #08a7ec; }
 

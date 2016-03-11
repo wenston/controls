@@ -35,6 +35,19 @@ $size-16:16px;
     border-bottom: 1px solid #dddddd;
     padding-bottom: 5px;
 }
+//实例
+.code-ex{
+    margin-top:20px;
+}
+
+//标题备注
+.h1-title-mark{
+    font-size:14px;
+    margin-left:10px;
+}
+.h2-title-mark{
+    font-size:16px;
+}
 
 //标准字
 .we-example{
@@ -43,6 +56,8 @@ $size-16:16px;
     margin: 0 -15px 15px;
     border:1px solid $color-dddddd;
     border-radius: 4px 4px 0 0;
+    height: auto;
+    overflow: hidden;
 }
 .we-example::after {
     position: absolute;
@@ -170,4 +185,15 @@ $size-16:16px;
 //强调
 .colors-fb6362{
     background-color:$color-fb6362;
+}
+
+//按钮
+.btn-intro{
+    width:320px;
+    color: $color-999999;
+}
+
+//小标题
+.sm-title{
+    border-bottom:1px solid $color-dddddd;
 }

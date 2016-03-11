@@ -3,12 +3,24 @@
   border-bottom: 1px solid #dddddd;
   padding-bottom: 5px; }
 
+.code-ex {
+  margin-top: 20px; }
+
+.h1-title-mark {
+  font-size: 14px;
+  margin-left: 10px; }
+
+.h2-title-mark {
+  font-size: 16px; }
+
 .we-example {
   position: relative;
   padding: 45px 15px 15px;
   margin: 0 -15px 15px;
   border: 1px solid #dddddd;
-  border-radius: 4px 4px 0 0; }
+  border-radius: 4px 4px 0 0;
+  height: auto;
+  overflow: hidden; }
 
 .we-example::after {
   position: absolute;
@@ -119,3 +131,10 @@
 
 .colors-fb6362 {
   background-color: #fb6362; }
+
+.btn-intro {
+  width: 320px;
+  color: #999999; }
+
+.sm-title {
+  border-bottom: 1px solid #dddddd; }

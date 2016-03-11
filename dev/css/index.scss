@@ -21,6 +21,10 @@ $color-e6e8ed : #e6e8ed !default;
 $color-0990ca : #0990ca !default;
 $color-e8e9e8 : #e8e9e8 !default;
 $color-333 : #333 !default;
+$color-cccccc:#cccccc !default;
+$color-ff9402:#ff9402 !default;
+$color-e78602:#e78602 !default;
+$color-f28c00:#f28c00 !default;
 
 //大小尺寸
 $size12 : 12px !default;
@@ -76,6 +80,59 @@ $button-hover-color:#098fc9;
         background-color: $button-hover-color;
         color:$color-white;
     }
+}
+.btn-disabled-knet{
+    color:$color-cccccc;
+    background-color: $color-e8e8e8;
+    border-color: $color-e0e0e0;
+    &:hover {
+        color:$color-cccccc;
+        background-color: $color-e8e8e8;
+        border-color: $color-e0e0e0; 
+    }
+}
+.btn-default-knet{
+    color:$color-333;
+    background-color: $color-white;
+    border-color: $color-e0e0e0;
+    &:hover {
+        color:$color-333;
+        background-color: $color-e8e8e8;
+        border-color: $color-e0e0e0; 
+    }
+    &:focus {
+        color:$color-333;
+        background-color: $color-white;
+        border-color: $color-e0e0e0;
+    }
+    
+}
+.btn-warning-knet{
+    color:$color-white;
+    background-color: $color-ff9402;
+    border-color: $color-e78602;
+    &:hover {
+        color:$color-white;
+        background-color: $color-f28c00;
+        border-color: $color-e78602; 
+    } 
+}
+//主按钮
+.btn-main{
+    width:320px;
+    height:40px;
+    font-size:18px;
+}
+//一般按钮
+.btn-ordinary{
+    width:90px;
+    height:36px;
+    font-size:16px;
+}
+.btn-small{
+    width:60px;
+    height:28px;
+    font-size:12px;
 }
 //图标
 .ico-search {
