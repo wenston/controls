@@ -192,10 +192,26 @@ $size-16:16px;
     width:320px;
     color: $color-999999;
 }
+.btn-intro2{
+    color: $color-999999;
+}
 .btnIn{
     margin:5px;
 }
 //小标题
 .sm-title{
     border-bottom:1px solid $color-dddddd;
+}
+
+//提示
+.tipCenter{
+    height:90px;
+}
+
+//媒体查询
+@media(max-width:960px){
+    .col-lg-12 .media960{
+        padding:0px;
+        padding-top:45px;
+    }
 }
