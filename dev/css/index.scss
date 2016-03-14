@@ -32,12 +32,15 @@ $color-fb6362:#fb6362 !default;
 $color-effffe:#effffe !default;
 $color-d0f5f3:#d0f5f3 !default;
 $color-fff6f3:#fff6f3 !default;
-
+$color-1fb6ac:#1fb6ac !default;
 //鼠标形状
 $pointer:pointer !default;
 
 //圆角弧度
 $radius3:3px !default;
+
+//重要强调
+$im:!important;
 
 //整体
 body{
@@ -62,6 +65,28 @@ body{
 }
 .size12-knet{
     font-size:$size-12;
+}
+
+//背景缺省值
+.bg-def{
+    color:$color-white $im;
+    border:1px solid $color-08a7ec $im;
+    background-color:$color-08a7ec $im;
+}
+.bg-fb6362{
+    color:$color-white $im;
+    border:1px solid $color-fb6362 $im;
+    background-color:$color-fb6362 $im;
+}
+.bg-1fb5ac{
+    color:$color-white $im;
+    border:1px solid $color-1fb5ac $im;
+    background-color:$color-1fb5ac $im;
+}
+.bg-ffded2{
+    color:$color-white $im;
+    border:1px solid $color-ffded2 $im;
+    background-color:$color-ffded2 $im;
 }
 
 //按钮
@@ -821,6 +846,33 @@ input[placeholder] {font-size:$size-12;}
         color: $color-white;
     }  
 }
+
+//方形图标
+.ico-square{
+    width: 60px;
+    height: 60px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    color:$color-333;
+    border:1px solid $color-e0e0e0;
+    background-color:$color-white;
+}   
+//圆形图标
+.ico-circle{
+    width:65px;
+    height:65px;
+    font-size: 40px;
+    padding-top: 11px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    color:$color-1fb6ac;
+    border:1px solid $color-1fb6ac;
+    background-color:$color-white;    
+}
+    
 //定位
 .relative {position:relative;}
 .absolute {position:absolute;}

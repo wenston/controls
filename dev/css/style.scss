@@ -1,6 +1,7 @@
 //公共变量
 
 //颜色
+$color-white:white;
 $color-08a7ec:#08a7ec;
 $color-6d6e6d:#6d6e6d;
 $color-9a9b9a:#9a9b9a;
@@ -207,7 +208,28 @@ $size-16:16px;
 .tipCenter{
     height:90px;
 }
-
+//图标
+.icoStyle{
+    font-size:40px;
+    color:$color-08a7ec;
+    text-align:center;
+    min-height: 108px;
+    margin-bottom:20px;
+    >.ico-intro{
+        color:$color-333333;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    &:hover{
+        color:$color-white;
+        background-color:$color-08a7ec;
+        >.ico-intro{
+            color:$color-white;
+        }
+    }
+}
 //媒体查询
 @media(max-width:960px){
     .col-lg-12 .media960{
