@@ -335,7 +335,7 @@
 										<td>
 											<div class="label-knet">操作1</div>
 											<div class="label-knet">操作1</div>
-											<div class="label-more">更多 ▼
+											<div class="label-more">更多 <span class="caret"></span>
 												<div class="label-more-content">
 													<span class="label-more-detail">操作1</span>
 													<span class="label-more-detail">操作2</span>
@@ -383,7 +383,7 @@
         <span>&lt;div class="label-knet"&gt;内容&lt;/div&gt;</span>
         <span>&lt;div class="label-knet"&gt;内容&lt;/div&gt;</span>
         <span>&lt;div class="label-more"&gt;</span>
-          <span>更多 ▼</span>
+          <span>更多 &lt;span class="caret"&gt;&lt;/span&gt;</span>
           <span>&lt;div class="label-more-content"&gt</span>
             <span>&lt;span class="label-more-detail"&gt;操作1&lt/span&gt;</span>
             <span>&lt;span class="label-more-detail"&gt;操作1&lt/span&gt;</span>
@@ -528,11 +528,11 @@
 									<div class="col-lg-2">
 										<a href="javascript:;" class="checkbox-knet">
 											<input type="checkbox" />
-											<span class="glyphicon glyphicon-ok cboxChecked"></span>
+											<span class="yqy-check cboxChecked"></span>
 										</a>
 										<a href="javascript:;" class="cboxChecked-knet">
 											<input type="checkbox" />
-											<span class="glyphicon glyphicon-ok cboxChecked"></span>
+											<span class="yqy-check cboxChecked"></span>
 										</a>
 									</div>
 								</div>
@@ -543,13 +543,23 @@
 								<div class="form-group form-group-knet">
 									<label class="col-lg-1 control-label">下拉框</label>
 									<div class="col-lg-2">
-										<select class="form-control select-knet">
+										<!--<select class="form-control select-knet">
 											<option>1</option>
 											<option>2</option>
 											<option>3</option>
 											<option>4</option>
 											<option>5</option>
-										</select>
+										</select>-->
+										<div class="btn-group">
+										    <button type="button" class="btn btn-default dropdown-toggle">
+										                   下拉框
+										      <span class="caret"></span>
+										    </button>
+										    <ul class="dropdown-menu">
+										      <li><a href="#">选项二</a></li>
+										      <li><a href="#">选项三</a></li>
+										    </ul>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -654,7 +664,7 @@
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 								<div class="tipCenter" style="padding-top:30px;">
-									<span class="againError"><span class="yqy-againError">x</span>两次密码输入不一致</span>
+									<span class="againError"><span class="y-againError">x</span>两次密码输入不一致</span>
 								</div>	
 								<p class="btn-intro" style="width:100%;">图标颜色:#fb6362</p>
 							</div>
@@ -671,7 +681,7 @@
   <span class="nt">&lt;span class="yqy-pwdAgain"&gt;!&lt/span&gt;请再次输入密码</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span class="againError"&gt;</span>
-  <span class="nt">&lt;span class="yqy-againError"&gt;x&lt/span&gt;两次密码输入不一致</span>
+  <span class="nt">&lt;span class="y-againError"&gt;x&lt/span&gt;两次密码输入不一致</span>
 <span class="nt">&lt;/span&gt;</span></code></pre>
 					</div>
 				</div>
