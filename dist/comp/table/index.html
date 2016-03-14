@@ -427,76 +427,133 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
+					<h1 class="main-title">输入框、单选、多选、下拉菜单</h1>
 					<form action="" class="form-horizontal">
-						<div class="form-group">
-							<label for="name" class="col-lg-1 control-label">姓名</label>
-							<div class="col-lg-2">
-								<input type="text" class="form-control form-control-knet" id="name" placeholder="姓名">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="age" class="col-lg-1 control-label">年龄</label>
-							<div class="col-lg-2">
-								<input type="text" class="form-control form-control-knet-error" id="age" placeholder="20">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="search" class="col-lg-1 control-label">搜索框</label>
-							<div class="col-lg-2">
-								<div class="input-group">
-									<input type="text" class="form-control" id="search" placeholder="输入提示">
-									<div class="input-group-addon">
-										<span class="glyphicon glyphicon-search ico-search"></span>
+						<div class="col-lg-12">
+							<div class="we-example">
+								<div class="form-group form-group-knet">
+									<label for="name" class="col-lg-1 control-label">姓名</label>
+									<div class="col-lg-2">
+										<input type="text" class="form-control form-control-knet" id="name" placeholder="姓名">									
+									</div>
+									<div class="col-lg-2">
+										<p class="btn-intro btnIn">边框色:#e0e0e0 ,高度:32px,选中色:#08a7ec</p>								
+									</div>
+								</div>
+								<div class="form-group form-group-knet">
+									<label for="age" class="col-lg-1 control-label">年龄</label>
+									<div class="col-lg-2">
+										<input type="text" class="form-control form-control-knet form-control-knet-error" id="age" placeholder="20">
+									</div>
+									<div class="col-lg-2">
+										<p class="btn-intro btnIn">错误色:#fb6362</p>								
+									</div>
+								</div>
+								<div class="form-group form-group-knet">
+									<label for="search" class="col-lg-1 control-label">搜索框</label>
+									<div class="col-lg-2">
+										<div class="input-group">
+											<input type="text" class="form-control form-control-knet" id="search" placeholder="输入提示">
+											<div class="input-group-addon search-knet">
+												<span class="glyphicon glyphicon-search ico-search"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-2">
+										<p class="btn-intro btnIn">提示文字:12px #999999 ,搜索图标:#08a7ec</p>								
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="imgUpload" class="col-lg-1 control-label">图片上传</label>
-							<div class="col-lg-2">
-								<a href="javascript:;" class="imageUp-knet">
-									<input type="file" id="imgUpload" />上传
-								</a>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="zero-clipboard" title="复制到剪切板">
+								<span class="btn-clipboard">复制</span>
+							</div>
+							<div class="highlight">
+								<pre><code class="language-html" data-lang="html"><span class="nt">&lt;form action="" class="form-horizontal"&gt;</span>
+  <span class="nt">&lt;div class="form-group form-group-knet"&gt;</span>
+    <span class="nt">&lt;label class="col-lg-1 control-label"&gt;输入框&lt;/label&gt;</span>
+    <span class="nt">&lt;div class="col-lg-2"&gt;</span>
+      <span class="nt">&lt;input type="text" class="form-control form-control-knet"/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div class="form-group form-group-knet"&gt;</span>
+    <span class="nt">&lt;label class="col-lg-1 control-label"&gt;错误&lt;/label&gt;</span>
+    <span class="nt">&lt;div class="col-lg-2"&gt;</span>
+      <span class="nt">&lt;input type="text" class="form-control form-control-knet form-control-knet-error"/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div class="form-group form-group-knet"&gt;</span>
+    <span class="nt">&lt;label class="col-lg-1 control-label"&gt;搜索框&lt;/label&gt;</span>
+    <span class="nt">&lt;div class="col-lg-2"&gt;</span>
+      <span class="nt">&lt;input type="text" class="form-control form-control-knet" placeholder="输入提示"/&gt;</span>
+      <span class="nt">&lt;div class="input-group-addon search-knet"&gt;</span>
+        <span class="nt">&lt;span class="glyphicon glyphicon-search ico-search"&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre>
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="col-lg-1 control-label">单选</label>
-							<div class="col-lg-2">
-								<a href="javascript:;" class="radio-knet">
-									<input type="radio" />
-									<span class="radioChecked"></span>
-								</a>
-								<a href="javascript:;" class="radioChecked-knet">
-									<input type="radio" />
-									<span class="radioChecked"></span>
-								</a>
+						<div class="col-lg-12">
+							<div class="we-example">
+								<div class="form-group form-group-knet">
+									<label for="imgUpload" class="col-lg-1 control-label">图片上传</label>
+									<div class="col-lg-2">
+										<a href="javascript:;" class="imageUp-knet">
+											<input type="file" id="imgUpload" />上传
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="col-lg-12">
+							<div class="we-example">
+								<div class="form-group form-group-knet">
+									<label class="col-lg-1 control-label">单选</label>
+									<div class="col-lg-2">
+										<a href="javascript:;" class="radio-knet">
+											<input type="radio" />
+											<span class="radioChecked"></span>
+										</a>
+										<a href="javascript:;" class="radioChecked-knet">
+											<input type="radio" />
+											<span class="radioChecked"></span>
+										</a>
+									</div>
+								</div>
+								<div class="form-group form-group-knet">
+									<label class="col-lg-1 control-label">多选</label>
+									<div class="col-lg-2">
+										<a href="javascript:;" class="checkbox-knet">
+											<input type="checkbox" />
+											<span class="glyphicon glyphicon-ok cboxChecked"></span>
+										</a>
+										<a href="javascript:;" class="cboxChecked-knet">
+											<input type="checkbox" />
+											<span class="glyphicon glyphicon-ok cboxChecked"></span>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="col-lg-1 control-label">多选</label>
-							<div class="col-lg-2">
-								<a href="javascript:;" class="checkbox-knet">
-									<input type="checkbox" />
-									<span class="glyphicon glyphicon-ok cboxChecked"></span>
-								</a>
-								<a href="javascript:;" class="cboxChecked-knet">
-									<input type="checkbox" />
-									<span class="glyphicon glyphicon-ok cboxChecked"></span>
-								</a>
+						<div class="col-lg-12">
+							<div class="we-example">
+								<div class="form-group form-group-knet">
+									<label class="col-lg-1 control-label">下拉框</label>
+									<div class="col-lg-2">
+										<select class="form-control select-knet">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="form-group">
-							<label class="col-lg-1 control-label">下拉框</label>
-							<div class="col-lg-2">
-								<select class="form-control">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-						</div>
+						
 					</form>
 				</div>
 			</div>
@@ -507,26 +564,55 @@
         -->
 
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav>
-						<ul class="nav-knet-bordered">
+			<h1 class="main-title">标题</h1>
+			<div class="col-lg-12">
+				<div class="we-example media960">
+					<div class="col-lg-12">
+						<nav>
+							<ul class="nav-knet-bordered">
+								<li><a href="###">导航</a></li>
+								<li><a href="###">导航</a></li>
+								<li><a href="###">导航</a></li>
+								<li><a href="###">导航</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="zero-clipboard" title="复制到剪切板">
+					<span class="btn-clipboard">复制</span>
+				</div>
+				<div class="highlight">
+					<pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="nav-knet-bordered"&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="we-example media960">
+					<div class="col-lg-12">
+						<ul class="nav-knet-underline">
 							<li><a href="###">导航</a></li>
 							<li><a href="###">导航</a></li>
 							<li><a href="###">导航</a></li>
 							<li><a href="###">导航</a></li>
 						</ul>
-					</nav>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="nav-knet-underline">
-						<li><a href="###">导航</a></li>
-						<li><a href="###">导航</a></li>
-						<li><a href="###">导航</a></li>
-						<li><a href="###">导航</a></li>
-					</ul>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="zero-clipboard" title="复制到剪切板">
+					<span class="btn-clipboard">复制</span>
+				</div>
+				<div class="highlight">
+					<pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul class="nav-knet-underline"&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a href="#"&gt;导航&lt;/a&gt;&lt/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
 				</div>
 			</div>
 		</div>
@@ -546,11 +632,84 @@
 			</div>
 		</div>
 
+		<!--提示-->
+		<div class="container">
+			<div class="row">
+				<h1 class="main-title">提示</h1>
+				<div class="col-lg-12">
+					<div class="we-example">
+						<div class="col-lg-12">
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="tipCenter">
+									<div class="ope-tip-knet">操作提示</div>
+								</div>								
+								<p class="btn-intro" style="width:100%;">背景色:#ffffff 边框色:#ffded2   字体/字号颜色:12px #999999</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="tipCenter" style="padding-top:30px;">
+									<span class="pwdAgain"><span class="yqy-pwdAgain">!</span>请再次输入密码</span>
+								</div>
+								<p class="btn-intro" style="width:100%;">图标字体颜色:#08a7ec</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<div class="tipCenter" style="padding-top:30px;">
+									<span class="againError"><span class="yqy-againError">x</span>两次密码输入不一致</span>
+								</div>	
+								<p class="btn-intro" style="width:100%;">图标颜色:#fb6362</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="zero-clipboard" title="复制到剪切板">
+						<span class="btn-clipboard">复制</span>
+					</div>
+					<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="ope-tip-knet"&gt;操作提示&lt;/div&gt;</span>
+<span class="nt">&lt;span class="pwdAgain"&gt;</span>
+  <span class="nt">&lt;span class="yqy-pwdAgain"&gt;!&lt/span&gt;请再次输入密码</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span class="againError"&gt;</span>
+  <span class="nt">&lt;span class="yqy-againError"&gt;x&lt/span&gt;两次密码输入不一致</span>
+<span class="nt">&lt;/span&gt;</span></code></pre>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="we-example">
+						<div class="col-lg-12">
+							<div class="msg-hint"><span class="msg-hint-title">通知提示</span><span class="msg-hint-more">查看更多</span></div>
+							<p class="btn-intro2">背景色:#effffe 边框色:#d0f5f3   字号/字体颜色:12px #1fb5ac</p>
+						</div>
+						<div class="col-lg-12">
+							<div class="error-hint">错误提示内容</div>
+							<p class="btn-intro2">背景色:#fff6f3  边框色:#ffded2   字号/字体颜色:12px #fb6362</p>
+						</div>
+						<div class="col-lg-12">
+							<span class="tip-hint"><span>11</span></span>
+							<p class="btn-intro2" style="margin-top:30px;">背景色:#fb6362   字号/字体颜色:12px #ffffff</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="zero-clipboard" title="复制到剪切板">
+						<span class="btn-clipboard">复制</span>
+					</div>
+					<div class="highlight">
+						<pre><code class="language-html" data-lang="html"><span class="nt">&lt;div class="msg-hint"&gt;</span>
+  <span class="nt">&lt;span class="msg-hint-title"&gt;通知提示&lt/span&gt;</span>
+  <span class="nt">&lt;span class="msg-hint-more"&gt;查看更多&lt/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div class="error-hint"&gt;错误提示内容&lt;/div&gt;</span></code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<!--进度条-->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">样式一
-					<div>
+					<div class="row">
 						<div class="col-lg-12">
 							<span class="progressNone"></span><span class="progressTip">70%</span>
 							<div class="progress-knet-tip">
@@ -560,24 +719,30 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-12">样式二
-							<div>
+							<div class="row">
 								<div class="col-lg-12">
 									<div class="progress-knet-in">
 										<span>70%</span>
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-lg-12">样式三
 							<div class="row">
-								<div class="col-lg-12">样式三
-									<div>
-										<div class="col-lg-12">
-											<div class="progress-knet-step">
-												<span class="step-circle step01 step-08a7ec">1</span><span class="step-strip step02 step-08a7ec"></span><span class="step-circle step02 step-08a7ec">2</span><span class="step-strip step03"></span><span class="step-circle step03">3</span>
-												<span class="step-strip step04"></span><span class="step-circle step04">4</span>
-											</div>
-										</div>
+								<div class="col-lg-12">
+									<div class="progress-knet-step">
+										<span class="step-circle step01 step-08a7ec">1</span><span class="step-strip step02 step-08a7ec"></span><span class="step-circle step02 step-08a7ec">2</span><span class="step-strip step03"></span><span class="step-circle step03">3</span>
+										<span class="step-strip step04"></span><span class="step-circle step04">4</span>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 	</body>
 
 </html>

@@ -27,6 +27,11 @@ $color-e78602:#e78602 !default;
 $color-f28c00:#f28c00 !default;
 $color-1fb5ac:#1fb5ac !default;
 $color-14978f:#14978f !default;
+$color-ffded2:#ffded2 !default;
+$color-fb6362:#fb6362 !default;
+$color-effffe:#effffe !default;
+$color-d0f5f3:#d0f5f3 !default;
+$color-fff6f3:#fff6f3 !default;
 
 //鼠标形状
 $pointer:pointer !default;
@@ -194,6 +199,11 @@ $button-hover-color:#098fc9;
             background-color:$color-e8e8e8;
         }
     }
+    > tbody {
+        > tr:hover {
+            background-color:$color-e6e8ed;
+        }
+    }
     
 }
 .table-knet-hover {
@@ -305,6 +315,7 @@ $pager-disable-color:#ccc !default;
 $input-error-color:#fb6362;
 input[placeholder] {font-size:$size-12;}
 .form-control-knet {
+    height:32px;
     border-color:$color-e0e0e0;
     border-radius:$radius3;
     &:focus {
@@ -321,11 +332,19 @@ input[placeholder] {font-size:$size-12;}
         box-shadow: none;
     }
 }
+.form-group-knet{
+    margin-bottom:20px;
+}
+//搜索
+.search-knet{
+    border:1px solid $color-e0e0e0;
+    cursor:pointer;
+}
 //图片上传
 .imageUp-knet{
     padding: 0px 20px;
-    height: 34px;
-    line-height: 34px;
+    height: 32px;
+    line-height: 32px;
     position: relative;
     cursor: $pointer;
     color: $color-333;
@@ -462,6 +481,11 @@ input[placeholder] {font-size:$size-12;}
         font-size: $size-12;
         color: $color-e8e9e8;
     }
+}
+//下拉框
+.select-knet{
+    height:32px;
+    line-height:32px;
 }
 
 //导航
@@ -672,7 +696,131 @@ input[placeholder] {font-size:$size-12;}
     margin-top:-140px;
 }
 
+//提示
+.ope-tip-knet{
+    width:100px;
+    height:80px;
+    font-size:$size-12;
+    line-height:80px;
+    text-align:center;
+    color:#999999;
+    background:#ffffff;
+    border:1px solid $color-ffded2;
+    &:after{
+        content:"";
+        position:absolute;
+        left:60px;
+        top:-11px;
+        display:block;
+        width:0;
+        height:0;
+        margin:0;
+        padding:0;
+        border-width:6px;
+        border-color:transparent transparent #fff transparent;
+        border-style:solid;
+        z-index:2;
+    }
+    &:before{
+        content:"";
+        position:absolute;
+        left:60px;
+        top:-$size-12;
+        display:block;
+        width:0;
+        height:0;
+        margin:0;
+        padding:0;
+        border-width:6px;
+        border-color:transparent transparent #ccc transparent;
+        border-style:solid;
+        z-index:1;
+    }
+}
 
+.pwdAgain{
+    color:$color-08a7ec;
+    > .yqy-pwdAgain{
+        display: inline-block;
+        text-align:center;
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        border-radius: 50%;
+        border:1px solid $color-08a7ec;
+        margin-right: 5px;
+    }
+}
+.againError{
+    color:$color-fb6362;
+    > .yqy-againError{
+        display: inline-block;
+        text-align:center;
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        border-radius: 50%;
+        border:1px solid $color-fb6362;
+        margin-right: 5px;
+        line-height: 1.2;
+    }
+}
+.msg-hint{
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    color:$color-1fb5ac;
+    background-color:$color-effffe;
+    border:1px solid $color-d0f5f3;
+    font-size:$size-12;
+    line-height:1;
+    >.msg-hint-title{
+        float:left;
+        padding: 5px;
+    }
+    >.msg-hint-more{
+        float:right;
+        border:1px solid $color-d0f5f3;
+        padding:5px;
+        cursor:$pointer;
+    }
+}
+.error-hint{
+    width: 100%;
+    padding: 10px;
+    text-align:center;
+    overflow: hidden;
+    color:$color-fb6362;
+    background-color:$color-fff6f3;
+    border:1px solid $color-ffded2;
+    font-size:$size-12;
+    line-height:1;
+}
+.tip-hint{
+    position: relative;
+    display: inline-block;
+    &:before{    
+        content: " ";
+        border: 0 solid transparent;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 30px 40px 30px 0;
+        padding: 20px;
+        background: #669;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: absolute;   
+    }
+    >span{
+        display: inline-block;
+        position: relative;
+        margin-left: 12px;
+        margin-top: 10px;
+        color: $color-white;
+    }  
+}
 //定位
 .relative {position:relative;}
 .absolute {position:absolute;}
