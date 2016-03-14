@@ -262,6 +262,7 @@ $button-hover-color:#098fc9;
     cursor:pointer;
     &:hover {
         border:1px solid $color-e0e0e0;
+        background-color: $color-white;
         .label-more-content {
             display:block;
         }
@@ -778,7 +779,7 @@ input[placeholder] {font-size:$size-12;}
 }
 .againError{
     color:$color-fb6362;
-    > .yqy-againError{
+    > .y-againError{
         display: inline-block;
         text-align:center;
         width: 25px;
