@@ -15,7 +15,8 @@ module.exports = {
 	module:{
 		loaders:[
 			{test:/\.scss$/,loader:ExtractTextPlugin.extract('style','css!sass')},
-			{test:/\.swf$/,loader:'file-loader'}
+			{test:/\.swf$/,loader:'file-loader'},
+			{test:/\.vue$/,loader:'vue'}
 		]
 	},
 	plugins:[
