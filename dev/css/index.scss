@@ -159,6 +159,21 @@ $button-hover-color:#098fc9;
         border-color: $color-e0e0e0;
     }
 }
+.btn-labelOpe-knet{
+    color:$color-1fb5ac;
+    background-color: $color-white;
+    border-color: $color-e0e0e0;
+    &:hover {
+        color:$color-white;
+        background-color: $color-1fb5ac;
+        border-color: $color-14978f; 
+    } 
+    &:focus {
+        color:$color-333;
+        background-color: $color-white;
+        border-color: $color-e0e0e0;
+    }
+}
 .btn-opt-knet{
     color:$color-333;
     background-color: $color-white;
@@ -173,25 +188,30 @@ $button-hover-color:#098fc9;
 .btn-main{
     width:320px;
     height:40px;
+    line-height:26px;
     font-size:$size-18;
 }
 //一般按钮
 .btn-ordinary{
     width:90px;
     height:36px;
+    line-height:22px;
     font-size:$size-16;
 }
 .btn-small{
     width:60px;
     height:28px;
+    line-height:14px;
     font-size:12px;
 }
 .btn-label{
     height:28px;
+    line-height:14px;
     font-size:12px; 
 }
 .btn-label-opt{
     height: 22px;
+    line-height: 20px;
     font-size: 12px;
     padding-top: 0;
     padding-bottom: 0;
@@ -370,7 +390,7 @@ input[placeholder] {font-size:$size-12;}
 .imageUp-knet{
     padding: 0px 20px;
     height: 32px;
-    line-height: 32px;
+    line-height: 30px;
     position: relative;
     cursor: $pointer;
     color: $color-333;
